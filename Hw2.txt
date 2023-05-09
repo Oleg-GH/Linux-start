@@ -1,0 +1,30 @@
+ 1242  mkdir students
+ 1243  mkdir mentors
+ 1244  ls
+ 1245  cd students/
+ 1246  cat > students_list.txt
+ 1247  cd ..
+ 1248  cd mentors/
+ 1249  cat > mentors_list.txt
+ 1250  mv mentors_list.txt students/
+ 1251  tree
+ 1252  sudo apt install tree
+ 1253  tree
+ 1254  cd ..
+ 1255  tree
+ 1256  mv mentors/mentors_list.txt students/
+ 1257  cd students/
+ 1258  tree
+ 1259  ll
+ 1260  cd ..
+ 1261  rm mentors/
+ 1262  rm mentors
+ 1263  ll
+ 1264  rm mentors/
+ 1265  rm mentors/ -r
+ 1266  mv students/ students_and_mentors/
+ 1267  ll
+ 1268  rm students_and_mentors -r
+ 1269  ll
+ 1270  history
+

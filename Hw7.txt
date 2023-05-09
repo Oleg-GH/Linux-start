@@ -1,0 +1,58 @@
+1. Переустановить операционную систему (по желанию, для дополнительной практики)
+2. Установить Docker.
+3. Запустить контейнер с Ubuntu.
+4. * Используя Dockerfile, собрать связку nginx + PHP-FPM в одном контейнере.
+
+По пункту 1:  У меня не получается установить виртуальную систему на моем хостовом Mint21.
+              Если со snap удалось разобраться благодаря сокурсникам ( как оказалось, в файле
+              /etc/apt/preferences.d/nosnap.pref  стоял запрет на установку snap; после того, как
+             закомментировали содержимое, все установилось), то с виртуалкой так ничего и не получается.
+
+Пункты 2 и 3:
+
+oleg@oleg-pc:~$ sudo apt update
+
+oleg@oleg-pc:~$ sudo apt install docker.io -y
+    [sudo] пароль для oleg:       
+    Чтение списков пакетов… Готово
+    Построение дерева зависимостей… Готово
+    Чтение информации о состоянии… Готово         
+    Уже установлен пакет docker.io самой новой версии (20.10.21-0ubuntu1~22.04.2).
+    Следующие пакеты устанавливались автоматически и больше не требуются:
+      linux-headers-5.15.0-67 linux-headers-5.15.0-67-generic
+      linux-image-5.15.0-67-generic linux-modules-5.15.0-67-generic
+      linux-modules-extra-5.15.0-67-generic
+    Для их удаления используйте «sudo apt autoremove».
+    Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 3 пакетов не  
+    обновлено.
+oleg@oleg-pc:~$ sudo docker pull ubuntu
+    Using default tag: latest
+    latest: Pulling from library/ubuntu
+    2ab09b027e7f: Pull complete 
+    Digest: sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21
+    Status: Downloaded newer image for ubuntu:latest
+    docker.io/library/ubuntu:latest
+oleg@oleg-pc:~$ docker images
+    REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+    ubuntu       latest    08d22c0ceb15   6 weeks ago   77.8MB
+oleg@oleg-pc:~$ docker run -it ubuntu
+    root@f42184a8d39a:/# ls
+    bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
+    boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
+root@f42184a8d39a:/# pwd
+    /
+root@f42184a8d39a:/# exit
+    exit
+oleg@oleg-pc:~$ docker ps -a
+    CONTAINER ID   IMAGE     COMMAND       CREATED       STATUS                   PORTS     NAMES
+    f42184a8d39a   ubuntu    "/bin/bash"   2 hours ago   Exited (0) 2 hours ago             upbeat_black
+oleg@oleg-pc:~$ docker stop f42184a8d39a
+    f42184a8d39a
+oleg@oleg-pc:~$ docker rm f42184a8d39a
+    f42184a8d39a
+oleg@oleg-pc:~$ docker ps -a
+    CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+oleg@oleg-pc:~$ 
+
+
+Пункт 4 для меня слишком мудреный.

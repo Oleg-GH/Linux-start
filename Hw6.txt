@@ -1,0 +1,145 @@
+1. Установить Nginx
+2. * настроить Nginx на работу с PHP-FPM.
+3. Установить Apache.
+4. * Настроить обработку PHP. Добиться одновременной работы с Nginx.
+5. Настроить схему обратного прокси для Nginx (динамика - на Apache).
+6. Установить MySQL. Создать новую базу данных и таблицу в ней.
+7. * Установить пакет phpmyadmin и запустить его веб-интерфейс для управления MySQL.
+https://losst.pro/ustanovka-phpmyadmin-ubuntu-18-04
+
+Результат:
+Текст команд, которые применялись при выполнении задания. При наличии: часть конфигурационных файлов, которые решают задачу. Присылаем в формате текстового документа: задание и команды для решения (без вывода и без скриншотов).
+
+
+sudo apt install nginx -y
+systemctl status nginx
+sudo ss -ntlp
+cd /etc/nginx/
+ll
+tree
+sudo nano nginx.conf
+sudo nginx -t
+nano sites-enabled/default
+
+sudo apt install apache2 -y
+sudo ss -ntlp
+sudo systemctl status apache2
+cd /etc/apache2
+ll
+sudo apachectl -t
+sudo nano ports.conf
+sudo apachectl -t
+sudo systemctl reload apache2
+sudo systemctl stop nginx
+sudo systemctl status nginx
+sudo systemctl start apache2
+sudo systemctl status apache2
+sudo nano ports.conf
+sudo apachectl -t
+sudo systemctl reload apache2
+sudo apachectl -t
+sudo ss -ntlp
+sudo systemctl start nginx
+sudo ss -ntlp
+
+cd /etc/nginx/
+ll
+sudo nano sites-enabled/defaul              # меняем location (проброс и статические ресурсы)
+sudo nginx -t                               # проверяем синтаксис после измененя конф-ции
+sudo systemctl reload nginx                 # перезапуск служб
+sudo systemctl reload apache2
+sudo ss -ntlp                               # порты
+
+sudo apt install libapache2-mod-php php -y
+cd /etc/apache2/
+ll
+cd mods-enabled/
+nano php8.1.conf
+cd /var/www/html
+sudo su
+nano info.php                               # phpinfo();
+systemctl restart apache2
+systemctl restart nginx
+apt install php-fpm
+cd /etc/php/
+ll
+cd 8.1/
+ll
+nano fpm/pool.d/www.conf                    # копируем путь к файлу (listen=<путь к файлу>)
+cd /etc/nginx/
+ll
+cd sites-enabled/
+ll
+sudo nano default                           # раскомментируем location ( /run/php/php8.1-fpm.sock )
+nginx -t
+systemctl reload nginx
+ss -ntlp
+systemctl status php*                       # с этого момента браузеру отвечает php
+exit
+
+sudo apt install mysql-server -y
+systemctl status mysql
+sudo ss -ntlp
+sudo mysql -u root -p
+
+show databases;
+use sys;
+show tables;
+use mysql;
+show tables;
+create database my_new_table;
+show databases;
+use my_new_table;
+show my_new_table;
+create table lerners (id INT, email VARCHAR(200));
+show tables;
+SELECT * FROM learners;
+insert into learners VALUES (1, 'petr@mail.ru'),(2, 'mark@mail.ru'),(3, 'olga@mail.ru');
+SELECT * FROM learners;
+update learners
+-> set email = 'mark@gmail.com'
+-> where id = 2;
+SELECT * FROM learners;
+delete from learners where id = 3;
+SELECT * FROM learners;
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

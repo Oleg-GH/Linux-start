@@ -1,0 +1,22 @@
+ 1292  who
+ 1293  tree
+ 1294  sudo adduser newuser
+ 1295  tail /etc/passwd
+ 1296  su newuser
+ 1297  sudo groupadd newgroup
+ 1298  tail /etc/group
+ 1299  sudo usermod -aG newgroup user2
+ 1300  sudo usermod -aG newgroup newuser
+ 1301  tail /etc/group
+ 1302  group newuser
+ 1303  groups newuser
+ 1304  sudo userdel newuser -r
+ 1305  tail /etc/group
+ 1306  sudo groupdel newgroup
+ 1307  tail /etc/group
+ 1308  sudo adduser superuser
+ 1309  tail /etc/group
+ 1310  sudo usermod -aG sudo superuser
+ 1311  su superuser
+ 1312  history
+

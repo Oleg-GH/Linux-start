@@ -1,0 +1,21 @@
+1216  hostname -I
+ 1217  hostnamectl
+ 1218  htop
+ 1219  sudo apt update
+ 1220  sudo apt install openssh-server -y
+ 1221  sudo systemctl start ssh
+ 1222  sudo systemctl status ssh
+ 1223  sudo system enable ssh
+ 1224  sudo systemctl enable ssh
+ 1225  ip addr
+ 1226  ip a
+ 1227  hostname -I
+ 1228  whoami
+ 1229  sudo apt install mc
+ 1230  mc
+ 1231  uname
+ 1232  uname -a
+ 1233  hostnamectl
+ 1234  history
+oleg@oleg-pc:~$ 
+

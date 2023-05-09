@@ -1,0 +1,406 @@
+Microsoft Windows [Version 10.0.19041.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\e.fedorov>ssh ad@192.168.110.61
+ad@192.168.110.61's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-40-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+77 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+2 дополнительных обновления безопасности могут быть применены с помощью ESM Apps.
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+Last login: Sun Apr 23 11:48:31 2023 from 213.24.135.21
+ad@gb-Linux:~$ ls -l
+итого 90476
+-rw-rw-r-- 1 ad   ad          0 апр 20 12:27  20
+-rw-rw-r-- 1 ad   ad          0 апр 20 12:24  20]
+-rw-rw-r-- 1 ad   ad        157 апр 20 10:09  all.txt
+drwxrwxr-x 2 ad   ad       4096 апр  9 11:22  backup
+drwxr-xr-x 2 root root     4096 апр 13 16:08  backupNginx
+-rw-rw-r-- 1 ad   ad        211 апр 20 14:03  cycles.sh
+drwxrwxr-x 2 ad   ad       4096 апр 18 16:39  docker
+-rw-rw-r-- 1 ad   ad         53 апр 20 10:07  err.txt
+drwxrwxr-x 2 ad   ad       4096 апр  7 11:17  geekbrains
+drwxrwxr-x 2 ad   ad       4096 апр  6 15:54  Geekbrains
+drwxrwxr-x 2 ad   ad       4096 апр 23 13:06  homework8
+-rw-rw-r-- 1 ad   ad        435 апр 16 12:40  ipBackup.rules
+-rw-rw-r-- 1 ad   ad       1509 апр 16 12:20  ippp.rules
+-rw-rw-r-- 1 ad   ad        423 апр  9 13:50  ipp.rules
+-rw-rw-r-- 1 ad   ad       1509 апр 16 12:40  ip.rules
+drwxrwxr-x 2 ad   ad       4096 апр 20 10:03  lecture8
+-rw-rw-r-- 1 ad   ad        405 апр 20 10:06  ls_txt
+-rw-r--r-- 1 ad   ad       3882 ноя 15 08:49  nginx_1.18.0-6ubuntu14.3_amd64.deb
+drwxrwxr-x 2 ad   ad       4096 апр 23 11:46  scripts
+drwxr-xrwx 2 root root     4096 апр  6 14:39  shared
+drwx------ 7 ad   ad       4096 апр 20 09:38  snap
+-rw-rw-r-- 1 ad   ad        104 апр 20 10:07  std.txt
+drwxrwxr-x 2 ad   ad       4096 апр 12 16:13  test
+-rw-rw-r-- 1 ad   ad        397 апр 20 13:29  testsc
+-rw-rw-r-- 1 ad   ad        118 апр 20 12:41  time
+-rw-rw-r-- 1 ad   ad   92337724 янв 17 18:20  virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
+-rw-r--r-- 1 root root      767 апр  6 15:25  wget-log
+-rw-r--r-- 1 ad   ad     175730 мар 25  2022  zip_3.0-12build2_amd64.deb
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Видео
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Документы
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Загрузки
+drwxr-xr-x 3 ad   ad       4096 апр  6 14:53  Изображения
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Музыка
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Общедоступные
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33 'Рабочий стол'
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Шаблоны
+ad@gb-Linux:~$ mkdir Аттестация
+ad@gb-Linux:~$ cd Аттестация/
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 0
+ad@gb-Linux:~/Аттестация$ mkdir "Игрушки для школьников"
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 4
+drwxrwxr-x 2 ad ad 4096 апр 26 13:29 'Игрушки для школьников'
+ad@gb-Linux:~/Аттестация$ mkdir "Игрушки для дошколят"
+ad@gb-Linux:~/Аттестация$ cd Игрушки\ для\ школьников/
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ ды -д
+ды: команда не найдена
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ ls -l
+итого 0
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ touch Роботы Конструктор "Настольные игры"
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ ls -l
+итого 0
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Конструктор
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31 'Настольные игры'
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Роботы
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ cd ..
+ad@gb-Linux:~/Аттестация$ cd Игрушки\ для\ дошколят/
+ad@gb-Linux:~/Аттестация/Игрушки для дошколят$ ls -l
+итого 0
+ad@gb-Linux:~/Аттестация/Игрушки для дошколят$ touch "Мягкие игрушки".txt Куклы.txt Машинки.txt
+ad@gb-Linux:~/Аттестация/Игрушки для дошколят$ ls -l
+итого 0
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Куклы.txt
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Машинки.txt
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31 'Мягкие игрушки.txt'
+ad@gb-Linux:~/Аттестация/Игрушки для дошколят$ cd ..
+ad@gb-Linux:~/Аттестация$ cd Игрушки\ для\ школьников/
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ ls -l
+итого 0
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Конструктор
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31 'Настольные игры'
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Роботы
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ mv Конструктор Конструктор.txt
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ mv Роботы Роботы.txt
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ mv Настольные\ игры "Настольные игры".txt
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ ls -l
+итого 0
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Конструктор.txt
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31 'Настольные игры.txt'
+-rw-rw-r-- 1 ad ad 0 апр 26 13:31  Роботы.txt
+ad@gb-Linux:~/Аттестация/Игрушки для школьников$ cd ..
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 8
+drwxrwxr-x 2 ad ad 4096 апр 26 13:31 'Игрушки для дошколят'
+drwxrwxr-x 2 ad ad 4096 апр 26 13:33 'Игрушки для школьников'
+ad@gb-Linux:~/Аттестация$ mkdir "Имя игрушки"
+ad@gb-Linux:~/Аттестация$ mv Игрушки\ для\ дошколят/ Имя\ игрушки/
+ad@gb-Linux:~/Аттестация$ mv Игрушки\ для\ школьников/ Имя\ игрушки/
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 4
+drwxrwxr-x 4 ad ad 4096 апр 26 13:40 'Имя игрушки'
+ad@gb-Linux:~/Аттестация$ cd Имя\ игрушки/
+ad@gb-Linux:~/Аттестация/Имя игрушки$ ls -l
+итого 8
+drwxrwxr-x 2 ad ad 4096 апр 26 13:31 'Игрушки для дошколят'
+drwxrwxr-x 2 ad ad 4096 апр 26 13:33 'Игрушки для школьников'
+ad@gb-Linux:~/Аттестация/Имя игрушки$ св юю
+св: команда не найдена
+ad@gb-Linux:~/Аттестация/Имя игрушки$ cd ..
+ad@gb-Linux:~/Аттестация$ mv Имя\ игрушки/ Игрушки
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 4
+drwxrwxr-x 4 ad ad 4096 апр 26 13:40 Игрушки
+ad@gb-Linux:~/Аттестация$ tree
+.
+└── Игрушки
+    ├── Игрушки для дошколят
+    │   ├── Куклы.txt
+    │   ├── Машинки.txt
+    │   └── Мягкие игрушки.txt
+    └── Игрушки для школьников
+        ├── Конструктор.txt
+        ├── Настольные игры.txt
+        └── Роботы.txt
+
+3 directories, 6 files
+ad@gb-Linux:~/Аттестация$ cd ..
+ad@gb-Linux:~$ snap find gimp
+Название                Версия   Издатель       Примечание  Описание
+gimp                    2.10.30  snapcrafters   -           GNU Image Manipulation Program
+gutenprint-printer-app  1.0      openprinting✓  -           Gutenprint Printer Application
+djpdf                   0.4.3    unrud          -           Create small, searchable PDFs from scanned documents
+ad@gb-Linux:~$ sudo apt update
+[sudo] пароль для ad:
+Чтение списков пакетов… Готово
+E: Не удалось получить блокировку файла /var/lib/apt/lists/lock. Она удерживается процессом 2066 (packagekitd)
+N: Имейте в виду, что удаление файла блокировки не является решением и может сломать вашу систему.
+E: Невозможно заблокировать каталог /var/lib/apt/lists/
+ad@gb-Linux:~$ systemctl reboot
+==== AUTHENTICATING FOR org.freedesktop.login1.set-wall-message ===
+Чтобы отправить сообщение на все терминалы, необходимо пройти аутентификацию
+Authenticating as: ad,,, (ad)
+Password:
+==== AUTHENTICATION COMPLETE ===
+==== AUTHENTICATING FOR org.freedesktop.login1.reboot ===
+Чтобы перезагрузить систему, необходимо пройти аутентификацию.
+Authenticating as: ad,,, (ad)
+Password:
+ad@gb-Linux:~$ sudo reboot
+ad@gb-Linux:~$ Connection to 192.168.110.61 closed by remote host.
+Connection to 192.168.110.61 closed.
+
+C:\Users\e.fedorov>ssh ad@192.168.110.61
+ad@192.168.110.61's password:
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-40-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Расширенное поддержание безопасности (ESM) для Applications выключено.
+
+77 обновлений может быть применено немедленно.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+2 дополнительных обновления безопасности могут быть применены с помощью ESM Apps.
+Подробнее о включении службы ESM Apps at https://ubuntu.com/esm
+
+Last login: Wed Apr 26 13:25:14 2023 from 192.168.110.152
+ad@gb-Linux:~$ ls -l
+итого 90480
+-rw-rw-r-- 1 ad   ad          0 апр 20 12:27  20
+-rw-rw-r-- 1 ad   ad          0 апр 20 12:24  20]
+-rw-rw-r-- 1 ad   ad        157 апр 20 10:09  all.txt
+drwxrwxr-x 2 ad   ad       4096 апр  9 11:22  backup
+drwxr-xr-x 2 root root     4096 апр 13 16:08  backupNginx
+-rw-rw-r-- 1 ad   ad        211 апр 20 14:03  cycles.sh
+drwxrwxr-x 2 ad   ad       4096 апр 18 16:39  docker
+-rw-rw-r-- 1 ad   ad         53 апр 20 10:07  err.txt
+drwxrwxr-x 2 ad   ad       4096 апр  7 11:17  geekbrains
+drwxrwxr-x 2 ad   ad       4096 апр  6 15:54  Geekbrains
+drwxrwxr-x 2 ad   ad       4096 апр 23 13:06  homework8
+-rw-rw-r-- 1 ad   ad        435 апр 16 12:40  ipBackup.rules
+-rw-rw-r-- 1 ad   ad       1509 апр 16 12:20  ippp.rules
+-rw-rw-r-- 1 ad   ad        423 апр  9 13:50  ipp.rules
+-rw-rw-r-- 1 ad   ad       1509 апр 16 12:40  ip.rules
+drwxrwxr-x 2 ad   ad       4096 апр 20 10:03  lecture8
+-rw-rw-r-- 1 ad   ad        405 апр 20 10:06  ls_txt
+-rw-r--r-- 1 ad   ad       3882 ноя 15 08:49  nginx_1.18.0-6ubuntu14.3_amd64.deb
+drwxrwxr-x 2 ad   ad       4096 апр 23 11:46  scripts
+drwxr-xrwx 2 root root     4096 апр  6 14:39  shared
+drwx------ 7 ad   ad       4096 апр 20 09:38  snap
+-rw-rw-r-- 1 ad   ad        104 апр 20 10:07  std.txt
+drwxrwxr-x 2 ad   ad       4096 апр 12 16:13  test
+-rw-rw-r-- 1 ad   ad        397 апр 20 13:29  testsc
+-rw-rw-r-- 1 ad   ad        118 апр 20 12:41  time
+-rw-rw-r-- 1 ad   ad   92337724 янв 17 18:20  virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
+-rw-r--r-- 1 root root      767 апр  6 15:25  wget-log
+-rw-r--r-- 1 ad   ad     175730 мар 25  2022  zip_3.0-12build2_amd64.deb
+drwxrwxr-x 3 ad   ad       4096 апр 26 13:40  Аттестация
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Видео
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Документы
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Загрузки
+drwxr-xr-x 3 ad   ad       4096 апр  6 14:53  Изображения
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Музыка
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Общедоступные
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33 'Рабочий стол'
+drwxr-xr-x 2 ad   ad       4096 апр  6 14:33  Шаблоны
+ad@gb-Linux:~$ cd Аттестация/
+ad@gb-Linux:~/Аттестация$ ды -д
+ды: команда не найдена
+ad@gb-Linux:~/Аттестация$ ls -l
+итого 4
+drwxrwxr-x 4 ad ad 4096 апр 26 13:40 Игрушки
+ad@gb-Linux:~/Аттестация$ tree
+.
+└── Игрушки
+    ├── Игрушки для дошколят
+    │   ├── Куклы.txt
+    │   ├── Машинки.txt
+    │   └── Мягкие игрушки.txt
+    └── Игрушки для школьников
+        ├── Конструктор.txt
+        ├── Настольные игры.txt
+        └── Роботы.txt
+
+3 directories, 6 files
+ad@gb-Linux:~/Аттестация$ snap --help
+Команда snap позволяет устанавливать, настраивать, обновлять и удалять
+snap-пакеты. Snap-пакеты — это пакеты, которые работают во многих различных
+дистрибутивах Linux, обеспечивая безопасную доставку и работу новейших
+приложений и утилит.
+
+Использование: snap <команда> [<параметры>...]
+
+Обычно используемые команды можно классифицировать следующим образом:
+
+               Основное: find, info, install, remove, list
+           ...подробнее: refresh, revert, switch, disable, enable, create-cohort
+                История: changes, tasks, abort, watch
+                 Службы: services, start, stop, restart, logs
+             Разрешения: connections, interface, connect, disconnect
+           Конфигурация: get, set, unset, wait
+  Псевдонимы приложений: alias, aliases, unalias, prefer
+         Учётная запись: login, logout, whoami
+                 Снимки: saved, save, check-snapshot, restore, forget
+             Устройство: model, reboot, recovery
+             Разработка: download, pack, run, try
+           Quota Groups: set-quota, remove-quota, quotas, quota
+        Validation Sets: validate
+              ... Other: warnings, okay, known, ack, version
+
+Для получения дополнительных сведений о команде, выполните 'snap help <команда>'.
+Для показа краткой сводки по всем командам, выполните 'snap help --all'.
+ad@gb-Linux:~/Аттестация$ snap install gimp
+ошибка: access denied (попробуйте с sudo)
+ad@gb-Linux:~/Аттестация$ sudo apt update
+[sudo] пароль для ad:
+Пол:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Пол:2 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [795 kB]
+Сущ:3 https://download.virtualbox.org/virtualbox/debian jammy InRelease
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Пол:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Пол:7 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [292 kB]
+Пол:8 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [155 kB]
+Пол:9 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [41,4 kB]
+Пол:10 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [9 024 B]
+Пол:11 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [830 kB]
+Пол:12 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [131 kB]
+Пол:13 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [522 kB]
+Пол:14 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [726 kB]
+Пол:15 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [120 kB]
+Пол:16 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [18,5 kB]
+Пол:17 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [14,2 kB]
+Пол:18 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [34,3 kB]
+Пол:19 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [6 464 B]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [484 kB]
+Пол:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 062 kB]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [220 kB]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [101 kB]
+Пол:24 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [14,1 kB]
+Пол:25 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [873 kB]
+Пол:26 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [137 kB]
+Пол:27 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [910 kB]
+Пол:28 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [609 kB]
+Пол:29 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [182 kB]
+Пол:30 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [269 kB]
+Пол:31 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [18,6 kB]
+Пол:32 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [39,0 kB]
+Пол:33 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [8 736 B]
+Пол:34 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+Пол:35 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [8 016 B]
+Пол:36 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [12,9 kB]
+Получено 8 981 kB за 2с (3 749 kB/s)
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Может быть обновлено 84 пакета. Запустите «apt list --upgradable» для их показа.
+ad@gb-Linux:~/Аттестация$ snap find gimp
+Название                Версия   Издатель       Примечание  Описание
+gimp                    2.10.30  snapcrafters   -           GNU Image Manipulation Program
+gutenprint-printer-app  1.0      openprinting✓  -           Gutenprint Printer Application
+djpdf                   0.4.3    unrud          -           Create small, searchable PDFs from scanned documents
+ad@gb-Linux:~/Аттестация$ sudo snap install gimp
+gimp 2.10.30 от Snapcrafters установлен
+ad@gb-Linux:~/Аттестация$ sudo snap remove gimp
+gimp удалён
+ad@gb-Linux:~/Аттестация$ sudo auto remove
+sudo: auto: команда не найдена
+ad@gb-Linux:~/Аттестация$ sudo autoremove
+sudo: autoremove: команда не найдена
+ad@gb-Linux:~/Аттестация$ sudo apt autoremove
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 84 пакетов не обновлено.
+ad@gb-Linux:~/Аттестация$ fg -h
+-bash: fg: -h: недопустимый параметр
+fg: использование: fg [задание]
+ad@gb-Linux:~/Аттестация$ df -h
+Файл.система   Размер Использовано  Дост Использовано% Cмонтировано в
+tmpfs            198M         1,6M  197M            1% /run
+/dev/sda3         20G          15G  3,5G           82% /
+tmpfs            988M            0  988M            0% /dev/shm
+tmpfs            5,0M         4,0K  5,0M            1% /run/lock
+/dev/sda2        512M         6,1M  506M            2% /boot/efi
+tmpfs            198M          80K  198M            1% /run/user/128
+tmpfs            198M          72K  198M            1% /run/user/1000
+ad@gb-Linux:~/Аттестация$ cronntab -e
+Команда «cronntab» не найдена. Возможно, вы имели в виду:
+  command 'crontab' from deb cron (3.0pl1-137ubuntu3)
+  command 'crontab' from deb bcron (0.11-9)
+  command 'crontab' from deb systemd-cron (1.15.18-1)
+Try: sudo apt install <deb name>
+ad@gb-Linux:~/Аттестация$
+
+No modification made
+ad@gb-Linux:~/Аттестация$ touch backup.txt
+ad@gb-Linux:~/Аттестация$ crontab -i
+crontab: usage error: file name must be specified for replace
+usage:  crontab [-u user] file
+        crontab [ -u user ] [ -i ] { -e | -l | -r }
+                (default operation is replace, per 1003.2)
+        -e      (edit user's crontab)
+        -l      (list user's crontab)
+        -r      (delete user's crontab)
+        -i      (prompt before deleting user's crontab)
+ad@gb-Linux:~/Аттестация$ crontab -e
+crontab: installing new crontab
+ad@gb-Linux:~/Аттестация$ crontab -l
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+  */3 *  *   *   *    echo "Hi $(date)" >> ~/geekbrains/logs.txt
+# * * * * * echo "Hi backup $(date)" >> ~/backup/test.txt
+# 1,11,21,31,41,51 * * * * cp ~/backup/test.txt ~/backup/test.txt.bak
+  @reboot  iptables-restore < ip.rules
+
+
+ad@gb-Linux:~/Аттестация$

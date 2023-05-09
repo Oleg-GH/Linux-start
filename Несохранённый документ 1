@@ -1,0 +1,29 @@
+
+iptables
+
+1. Настроить iptables: разрешить подключения только на 22-й и 80-й порты.
+
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -j DROP
+
+
+2. Настроить проброс портов локально с порта 80 на порт 8080.
+
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo service iptables save
+
+3. Запретить любой входящий трафик с IP-адреса 3.4.5.6.
+
+sudo iptables -t filter -A INPUT -s 3.4.5.6 -j DROP
+
+
+
+
+Сигналы процессам
+4. Запустите mc. Используя ps, найдите PID процесса, завершите процесс, передав ему сигнал 9.
+
+ mc
+ ps aux | grep mc
+ kill -s 9 104173
+
